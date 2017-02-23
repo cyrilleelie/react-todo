@@ -16,7 +16,7 @@ export var showCompletedReducer = (state = false, action) => {
       return !state;
     default:
       return state;
-  };
+  }
 };
 
 export var todosReducer = (state = [], action) => {
@@ -42,9 +42,9 @@ export var todosReducer = (state = [], action) => {
             completed: nextCompleted,
             completedAt: nextCompleted ? moment().unix() : undefined
           };
-        };
+        }
       });
     default:
       return state;
-  };
+  }
 };
